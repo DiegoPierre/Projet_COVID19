@@ -455,66 +455,29 @@ plt.show()
 <p style='text-align: center; font-style: italic; color: #7f8c8d;'>
  
  ## Recommandations commerciales basées sur l'analyse COVID-19
+*Renforcer la surveillance dans les régions à forte augmentation des cas.*
  
- ### 1. Renforcer la surveillance dans les pays à risque élevé
-- **Observation** : Le modèle Random Forest identifie les périodes où la propagation dépasse 20 % sur 14 jours (`Haut_Risque = 1`).
-- **Recommandation** : Les autorités sanitaires et les organisations partenaires doivent concentrer les ressources (tests, campagnes d’information, équipements médicaux) sur les pays ou régions identifiés comme "haut risque" par le modèle.
-- **Impact attendu** : Détection plus rapide des vagues épidémiques, réduction des cas graves et optimisation des ressources.
+ *Planification proactive des mesures sanitaires (campagnes de vaccination, communication
+publique).*
 
-- ### 2. Optimiser la planification des campagnes de vaccination
-- **Observation** : L’augmentation rapide des cas est corrélée à des faibles taux de vaccination dans certaines régions.
-- **Recommandation** : Cibler les campagnes de vaccination dans les zones à faible couverture pour diminuer la propagation et réduire la pression sur le système de santé.
-- **Impact attendu** : Amélioration de l’immunité collective, diminution du nombre de cas et des hospitalisations.
+ *Allocation des ressources (personnel, équipements, tests) en fonction des prédiction*
 
-### 3. Prioriser l’allocation des ressources médicales
-- **Observation** : L’analyse des vagues épidémiques montre que certaines régions connaissent des pics simultanés de cas et décès.
-- **Recommandation** : Utiliser les prédictions du modèle pour anticiper les besoins en lits hospitaliers, respirateurs et personnel médical. Créer des plans d’urgence régionaux pour mobiliser rapidement les ressources.
-- **Impact attendu** : Réduction de la saturation des hôpitaux, meilleure gestion des urgences et amélioration de la qualité des soins.
-
-## Conclusion
-
-Dans cette analyse, nous avons exploré les données COVID-19 au niveau mondial, effectué un prétraitement complet et construit des modèles de Machine Learning pour prédire les périodes à **haut risque** d'augmentation des cas.  
-
-Les étapes clés comprenaient :
-- **Nettoyage et préparation des données** : gestion des valeurs manquantes, conversion des dates et création de variables temporelles.  
-- **Exploration des données** : visualisations des cas et décès par région et suivi des vagues épidémiques dans le temps.  
-- **Préparation pour le Machine Learning** : sélection des features, normalisation et séparation train/test.  
-- **Modélisation** : utilisation de la régression logistique et de la Forêt Aléatoire avec GridSearch pour optimiser les hyperparamètres.  
-- **Évaluation** : métriques de classification, matrices de confusion et courbes ROC ont permis de mesurer la performance des modèles.  
-
-Le modèle Random Forest s’est révélé particulièrement performant pour détecter les périodes à haut risque, permettant d’anticiper les vagues épidémiques.  
-
-Enfin, trois recommandations concrètes ont été proposées :  
-1. Renforcer la surveillance dans les pays à risque élevé.  
-2. Optimiser la planification des campagnes de vaccination.  
-3. Prioriser l’allocation des ressources médicales.  
-
-Ces recommandations peuvent aider les autorités sanitaires et les organisations internationales à mieux cibler leurs interventions, réduire la propagation du virus et optimiser la gestion des ressources.
 
 ### Next Steps
+Ajouter des données supplémentaires (vaccination, tests, densité population).
 
-Pour aller plus loin et améliorer l’analyse et la prédiction des périodes à haut risque, les actions suivantes sont recommandées :
+Tester d’autres modèles pour améliorer la précision. Créer un dashboard interactif pour
+suivre en temps
 
-1. **Enrichissement des features**  
-   - Ajouter des variables supplémentaires comme le taux de vaccination, la densité de population, le nombre de tests réalisés, et les mesures sanitaires en place.  
-   - Intégrer des indicateurs socio-économiques pouvant influencer la propagation du virus.
+réel les périodes à risque. Collaborer avec les autorités sanitaires pour adapter les stratégie
 
-2. **Optimisation des modèles**  
-   - Tester d’autres algorithmes de Machine Learning ou de Deep Learning, comme XGBoost, LightGBM ou des modèles séquentiels pour séries temporelles.  
-   - Effectuer une recherche d’hyperparamètres plus fine et utiliser des techniques comme la validation croisée avancée ou le random search.
 
-3. **Analyse temporelle avancée**  
-   - Mettre en place des modèles de prévision pour les cas futurs sur plusieurs semaines ou mois.  
-   - Étudier la saisonnalité et les tendances régionales afin de mieux anticiper les vagues épidémiques.
+## Conclusion
+Les modèles de Machine Learning permettent de prévoir les périodes à haut risque COVID19.
 
-4. **Visualisation interactive**  
-   - Créer des dashboards interactifs pour suivre l’évolution des cas et des décès en temps réel par pays ou par région.  
-   - Fournir des alertes automatisées pour les périodes à haut risque détectées par les modèles.
+Ils aident les décideurs à prendre des décisions
 
-5. **Collaboration et mise à jour des données**  
-   - Automatiser l’import des nouvelles données pour garder le modèle à jour.  
-   - Collaborer avec les autorités sanitaires pour valider les prédictions et ajuster les recommandations.
-
+éclairées et à mieux préparer les réponses sanitai
 
 </p>
 
